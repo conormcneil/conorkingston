@@ -1,0 +1,104 @@
+body {
+  padding: 0;
+  margin: 3em 0 0;
+  text-transform: lowercase;
+  font-family: sans-serif; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6,
+  body p {
+    margin: 0;
+    padding: 0; }
+  body .signature {
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%; }
+
+a {
+  text-decoration: none;
+  color: #2e95c9;
+  letter-spacing: .3em;
+  width: inherit;
+  height: auto; }
+
+.header {
+  margin: 0;
+  padding: 0 3em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #c7cacc;
+  color: #2b3348;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100vw - 6em);
+  height: 3em;
+  z-index: 100; }
+  .header section {
+    width: 25%; }
+    .header section:first-child {
+      text-align: left; }
+    .header section:nth-child(2) {
+      text-align: center; }
+    .header section:last-child {
+      align-items: flex-end; }
+  .header .menu {
+    display: flex;
+    flex-flow: row-reverse nowrap; }
+    .header .menu .link {
+      margin: 0 0 0 0.5em;
+      cursor: pointer; }
+
+.fullscreen {
+  padding: 0 3em;
+  min-height: calc(100vh - 3em);
+  width: calc(100vw - 6em);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  color: #2b3348;
+  align-items: flex-end; }
+  .fullscreen h1 {
+    text-decoration: underline; }
+  .fullscreen .ghost {
+    height: 0;
+    width: 100%; }
+  .fullscreen .headshot {
+    height: 20em;
+    border-radius: 10em;
+    border: 3px solid #2b3348; }
+  .fullscreen:nth-child(2n) {
+    background: #fdd5d6; }
+  .fullscreen .content .bio {
+    width: 500px; }
+  .fullscreen .project {
+    display: flex;
+    flex-flow: row nowrap; }
+
+.wrapper {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto; }
+  .wrapper.row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .wrapper.col {
+    height: 50vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; }
+  .wrapper :nth-child(2n) {
+    align-self: flex-end; }
+
+/*# sourceMappingURL=style.css.map */
