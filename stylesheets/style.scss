@@ -35,10 +35,14 @@ body {
 
 a {
     text-decoration: none;
-    color: $darkGrey;
+    color: $orange;
     letter-spacing: .1em;
     width: inherit;
     height: auto;
+}
+
+.link-alt {
+    color: $darkGrey;
 }
 
 .section-title {
@@ -62,10 +66,6 @@ a {
     width: calc(100vw - 6em);
     height: $headerHeight;
     z-index: 100;
-
-    a {
-        color: $orange;
-    }
 
     section {
         &:first-child {
@@ -129,23 +129,21 @@ a {
         width: 100%;
         display: flex;
         justify-content: space-between;
-
-        .bio {
-            color: $darkGrey;
-        }
-
+        color: $darkGrey;
     }
 
     .project {
         margin: 1em 0;
         display: flex;
         flex-flow: row nowrap;
+        justify-content: flex-end;
     }
 
 }
 
 .content section {
     width: 30em;
+    color: $darkGrey;
 }
 
 .wrapper {
@@ -159,6 +157,9 @@ a {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        &.end {
+            justify-content: flex-end;
+        }
     }
 
     &.col {

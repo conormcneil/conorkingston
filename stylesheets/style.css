@@ -18,10 +18,14 @@ body .signature {
 
 a {
   text-decoration: none;
-  color: #6b6b69;
+  color: #f09900;
   letter-spacing: 0.1em;
   width: inherit;
   height: auto;
+}
+
+.link-alt {
+  color: #6b6b69;
 }
 
 .section-title {
@@ -44,9 +48,6 @@ a {
   width: calc(100vw - 6em);
   height: 3em;
   z-index: 100;
-}
-.header a {
-  color: #f09900;
 }
 .header section:first-child {
   text-align: left;
@@ -96,18 +97,18 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
-.fullscreen .content .bio {
   color: #6b6b69;
 }
 .fullscreen .project {
   margin: 1em 0;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: flex-end;
 }
 
 .content section {
   width: 30em;
+  color: #6b6b69;
 }
 
 .wrapper {
@@ -120,6 +121,9 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.wrapper.row.end {
+  justify-content: flex-end;
 }
 .wrapper.col {
   height: 50vh;
