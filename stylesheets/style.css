@@ -4,16 +4,6 @@ body {
   text-transform: lowercase;
   font-family: "Comfortaa", cursive;
 }
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6,
-body p {
-  margin: 0;
-  padding: 0;
-}
 body .signature {
   height: 3em;
   display: flex;
@@ -25,9 +15,13 @@ body .signature {
 a {
   text-decoration: none;
   color: #6b6b69;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
   width: inherit;
   height: auto;
+}
+
+.section-title {
+  text-decoration: underline;
 }
 
 .header {
@@ -73,7 +67,7 @@ a {
 
 .fullscreen {
   padding: 0 3em;
-  min-height: calc(100vh - 3em);
+  min-height: 70vh;
   width: calc(100vw - 6em);
   display: flex;
   flex-flow: column;
@@ -83,15 +77,12 @@ a {
   color: #f09900;
   align-items: flex-end;
 }
-.fullscreen h1 {
-  text-decoration: underline;
-}
 .fullscreen .ghost {
   height: 0;
   width: 100%;
 }
 .fullscreen .headshot {
-  height: 28em;
+  width: 24em;
   border-radius: 1em;
   box-shadow: 0 0 3px 1px #6b6b69;
   border: none;
@@ -99,13 +90,23 @@ a {
 .fullscreen:nth-child(2n) {
   background: #efeeea;
 }
+.fullscreen .content {
+  margin: 1em 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .fullscreen .content .bio {
-  width: 500px;
+  color: #6b6b69;
 }
 .fullscreen .project {
   margin: 1em 0;
   display: flex;
   flex-flow: row nowrap;
+}
+
+.content section {
+  width: 30em;
 }
 
 .wrapper {
