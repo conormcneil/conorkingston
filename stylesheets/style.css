@@ -16,7 +16,7 @@ body .signature {
   width: 100%;
 }
 
-a {
+a, .link {
   text-decoration: none;
   color: #f09900;
   letter-spacing: 0.1em;
@@ -62,7 +62,7 @@ a {
   display: flex;
   flex-flow: row-reverse nowrap;
 }
-.header .menu .link {
+.header .menu .menu-link {
   margin: 0 0 0 0.5em;
   cursor: pointer;
 }

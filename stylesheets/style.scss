@@ -33,7 +33,7 @@ body {
 
 }
 
-a {
+a, .link {
     text-decoration: none;
     color: $orange;
     letter-spacing: .1em;
@@ -86,7 +86,7 @@ a {
         display: flex;
         flex-flow: row-reverse nowrap;
 
-        .link {
+        .menu-link {
             margin: 0 0 0 0.5em;
             cursor: pointer;
         }
