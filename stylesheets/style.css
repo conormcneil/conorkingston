@@ -4,6 +4,10 @@ body {
   text-transform: lowercase;
   font-family: "Comfortaa", cursive;
 }
+body p {
+  margin: 0;
+  padding: 0;
+}
 body .signature {
   height: 3em;
   display: flex;
@@ -43,9 +47,6 @@ a {
 }
 .header a {
   color: #f09900;
-}
-.header section {
-  width: 25%;
 }
 .header section:first-child {
   text-align: left;

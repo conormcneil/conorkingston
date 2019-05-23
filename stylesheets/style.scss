@@ -10,6 +10,11 @@ $headerHeight: 3em;
 
 body {
 
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
     padding: 0;
     margin: $headerHeight 0 0;
     text-transform: lowercase;
@@ -63,9 +68,6 @@ a {
     }
 
     section {
-
-        width: 25%;
-
         &:first-child {
             text-align: left;
         }
