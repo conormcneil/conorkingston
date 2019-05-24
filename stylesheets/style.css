@@ -63,13 +63,15 @@ a, .link {
   flex-flow: row-reverse nowrap;
 }
 .header .menu .menu-link {
+  color: #efeeea;
+  text-shadow: 0 0 6px #6b6b69;
   margin: 0 0 0 0.5em;
   cursor: pointer;
 }
 
 .fullscreen {
   padding: 0 3em;
-  min-height: 70vh;
+  height: 70vh;
   width: calc(100vw - 6em);
   display: flex;
   flex-flow: column;
@@ -84,10 +86,11 @@ a, .link {
   width: 100%;
 }
 .fullscreen .headshot {
-  width: 24em;
+  height: 18em;
   border-radius: 1em;
   box-shadow: 0 0 3px 1px #6b6b69;
   border: none;
+  float: right;
 }
 .fullscreen:nth-child(2n) {
   background: #efeeea;
@@ -114,7 +117,7 @@ a, .link {
 .wrapper {
   display: flex;
   width: 80%;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .wrapper.row {

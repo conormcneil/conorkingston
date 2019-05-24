@@ -4,8 +4,9 @@ $lightGreen: rgba(210,218,196,1);
 $deepGreen: rgba(121,144,117,1);
 $orange: rgba(240,153,0,1);
 
-$gutter: 3em;
+$textShadow: 0 0 6px $darkGrey;
 
+$gutter: 3em;
 $headerHeight: 3em;
 
 body {
@@ -59,7 +60,7 @@ a, .link {
     align-items: center;
     background: $deepGreen;
     color: $lightGrey;
-    text-shadow: 0 0 6px $darkGrey;
+    text-shadow: $textShadow;
     position: fixed;
     top: 0;
     left: 0;
@@ -87,6 +88,8 @@ a, .link {
         flex-flow: row-reverse nowrap;
 
         .menu-link {
+            color: $lightGrey;
+            text-shadow: $textShadow;
             margin: 0 0 0 0.5em;
             cursor: pointer;
         }
@@ -98,7 +101,7 @@ a, .link {
 .fullscreen {
 
     padding: 0 $gutter;
-    min-height: 70vh;
+    height: 70vh;
     width: calc(100vw - 6em);
     display: flex;
     flex-flow: column;
@@ -114,10 +117,11 @@ a, .link {
     }
 
     .headshot {
-        width: 24em;
+        height: 18em;
         border-radius: 1em;
         box-shadow: 0 0 3px 1px $darkGrey;
         border: none;
+        float: right;
     }
 
     &:nth-child(2n) {
@@ -150,7 +154,7 @@ a, .link {
 
     display: flex;
     width: 80%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
 
     &.row {
@@ -178,7 +182,7 @@ a, .link {
 footer {
     background: $deepGreen;
     color: $lightGrey;
-    text-shadow: 0 0 6px $darkGrey;
+    text-shadow: $textShadow;
 }
 
 /* Float Shadow */
