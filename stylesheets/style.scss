@@ -9,6 +9,13 @@ $textShadow: 0 0 6px $darkGrey;
 $gutter: 3em;
 $headerHeight: 3em;
 
+.responsive-hide {
+    display: block;
+}
+.responsive-show {
+    display: none;
+}
+
 body {
 
     p {
@@ -100,9 +107,7 @@ a, .link {
 
 .fullscreen {
 
-    padding: 0 $gutter;
-    height: 70vh;
-    width: calc(100vw - 6em);
+    min-height: 70vh;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -117,7 +122,7 @@ a, .link {
     }
 
     .headshot {
-        height: 18em;
+        height: 24em;
         border-radius: 1em;
         box-shadow: 0 0 3px 1px $darkGrey;
         border: none;
@@ -167,7 +172,7 @@ a, .link {
     }
 
     &.col {
-        height: 50vh;
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
@@ -226,4 +231,43 @@ footer {
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+@media (max-width:375px) {
+    // responsive variables
+    $responsiveHeaderHeight: 4em;
+
+    .responsive-hide {
+        display: none;
+    }
+    .responsive-show {
+        display: block !important;
+    }
+
+    .wrapper {
+        width: calc(100vw - 2em);
+    }
+
+    .header {
+        padding: 0 1em;
+        width: calc(100vw - 2em);
+        height: $responsiveHeaderHeight;
+    }
+
+    .menu {
+        display: none !important;
+    }
+
+    .fullscreen {
+        padding: 1em;
+        width: calc(100vw - 2em);
+
+        .content {
+            width: 100% !important;
+        }
+    }
+
+    .headshot-container {
+        display: none;
+    }
 }
